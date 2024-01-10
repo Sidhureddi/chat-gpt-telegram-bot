@@ -21,7 +21,7 @@ _handler.setFormatter(formatter)
 _LOGGER.addHandler(_handler)
 _LOGGER.info("Initializing bot")
 try:
-    bot = Bot(token=os.environ['BOT_TOKEN'])
+    bot = Bot(token=os.environ['6858395443:AAHkpSM_E6YlnYr23I8uJXGNNjwcRRifsvo'])
     dp = Dispatcher(bot)
     _LOGGER.info("bot has been initialized successfully")
 except IndexError as e:
@@ -33,7 +33,7 @@ _LOGGER.info("history_database has been initialized")
 
 _LOGGER.info("Setting openai api key")
 try:
-    openai.api_key = os.environ['OPENAI_API_KEY']
+    openai.api_key = os.environ['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']
     client = openai.OpenAI()
     _LOGGER.info("openai api key has been set successfully")
 except IndexError as e:
